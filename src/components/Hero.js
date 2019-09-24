@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { FaArrowDown } from "react-icons/fa";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = ({ title, img, subtitle, className }) => {
   return (
@@ -18,7 +19,9 @@ const Hero = ({ title, img, subtitle, className }) => {
         <h2 className='has-text-weight-bold is-size-2'>{title}</h2>
         {subtitle ? <h3>{subtitle}</h3> : <></>}
         <button className='button'>La oss diskutere ditt prosjekt</button>
-        <FaArrowDown className='arrowDown' />
+        <AnchorLink href='#offers'>
+          <FaArrowDown className='arrowDown' />
+        </AnchorLink>
       </div>
     </>
   );

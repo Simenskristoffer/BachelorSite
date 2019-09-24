@@ -44,7 +44,7 @@ const Navbar = class extends React.Component {
             <Link to='/' className='navbar-item' title='Logo'>
               <img
                 src={Logo}
-                alt='Eivind Hope AS'
+                alt='Simen Stubsjøen Webdesign'
                 style={{ maxHeight: "80px", width: "auto" }}
               />
             </Link>
@@ -66,6 +66,15 @@ const Navbar = class extends React.Component {
             <div className='navbar-end has-text-centered'>
               <Link className='navbar-item nav-links' to='/'>
                 Hjem
+              </Link>
+              <Link className='navbar-item nav-links' to='/tjenester'>
+                Tjenester
+              </Link>
+              <Link className='navbar-item nav-links' to='/'>
+                Om
+              </Link>
+              <Link className='navbar-item nav-links' to='/'>
+                Kontakt
               </Link>
             </div>
           </div>

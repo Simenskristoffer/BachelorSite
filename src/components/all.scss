@@ -2,12 +2,17 @@
 
 //Fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 //Fonts variabels
 $openSans: "Open Sans", sans-serif;
+$roboto: "Roboto", sans-serif;
 //Color variabels
-$white: #ffffff;
+$white: #f0f2ed;
 $gold: #dfaa09;
+$gray: #909b92;
+$darkgold: #796118;
+$dark: #1f211e;
 
 // ---------- NAVBAR COMPONENT ---------//
 .navbar {
@@ -73,7 +78,7 @@ $gold: #dfaa09;
     padding: 1rem !important;
     text-align: center;
     font-size: 46px !important;
-    font-family: $openSans;
+    font-family: $roboto;
     line-height: 1em;
     font-weight: 300 !important;
     max-width: 1000px;
@@ -96,7 +101,7 @@ $gold: #dfaa09;
     position: absolute;
     top: 55%;
     text-align: center;
-    font-family: $openSans;
+    font-family: $roboto;
     font-size: 20px;
     line-height: 1.4em;
     font-style: italic;
@@ -119,6 +124,53 @@ $gold: #dfaa09;
     color: $gold;
     bottom: 5%;
     font-size: 28px;
+    left: 50%;
+  }
+}
+
+// ---------- OFFERS COMPONENT ---------//
+#offers {
+  background-color: $white;
+  h2 {
+    font-family: $roboto;
+    color: $dark;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: $roboto;
+    letter-spacing: 1.2px;
+  }
+  .button {
+    background-color: $gray;
+    font-size: 1.2rem;
+    font-family: $roboto;
+    margin-top: 1.5rem;
+    color: $white;
+  }
+}
+// ---------- FORMER CLIENTS COMPONENT ---------//
+.formerClients {
+  background-color: $dark;
+  h2 {
+    color: $white !important;
+    font-family: $roboto;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+  }
+  .wrapper {
+    display: grid;
+    grid-auto-rows: minmax(70px, auto);
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin: 0 25px;
+  }
+  .image {
+    display: block;
+    position: relative;
   }
 }
 

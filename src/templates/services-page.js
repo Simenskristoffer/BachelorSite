@@ -10,7 +10,7 @@ import Intro from "../components/Intro";
 import Hero from "../components/Hero";
 import FormerClients from "../components/FormerClients";
 
-export const IndexPageTemplate = ({
+export const ServicesPageTemplate = ({
   title,
   subtitle,
   forsidebilde,
@@ -27,12 +27,10 @@ export const IndexPageTemplate = ({
       <meta name='description' content={seoDescription} />
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />
-    <Intro />
-    <FormerClients />
   </>
 );
 
-IndexPageTemplate.propTypes = {
+ServicesPageTemplate.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   seoDescription: PropTypes.string,
@@ -43,12 +41,12 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
 };
 
-const IndexPage = ({ data }) => {
+const ServicesPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
-      <IndexPageTemplate
+      <ServicesPageTemplate
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
         forsidebilde={frontmatter.forsidebilde}
@@ -62,7 +60,7 @@ const IndexPage = ({ data }) => {
   );
 };
 
-IndexPage.propTypes = {
+ServicesPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object
@@ -70,11 +68,11 @@ IndexPage.propTypes = {
   })
 };
 
-export default IndexPage;
+export default ServicesPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  query ServicesPageTemplate {
+    markdownRemark(frontmatter: { templateKey: { eq: "services-page" } }) {
       frontmatter {
         title
         subtitle

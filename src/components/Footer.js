@@ -1,19 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import Logo from "../img/Logo1.png";
+import LogoSvart from "../img/logo2svart.png";
 
 const Footer = class extends React.Component {
   render() {
     return (
       <footer className='footer'>
-        <div className='content has-text-left'>
-          <img
-            src={Logo}
-            alt='Eivind Hope AS'
-            style={{ width: "20em", height: "5em" }}
-          />
-        </div>
+        <div className='content has-text-left'></div>
         <div className='content has-text-centered'>
           <div className='container'>
             <div className='columns'>
