@@ -22,25 +22,11 @@ export const IndexPageTemplate = ({
   <div className='content'>
     <Helmet>
       <meta charSet='utf-8' />
-      <title>{`Eivind Hope AS - ${title}`}</title>
+      <title>{`Simen Stubsjoen Webdesign - ${title}`}</title>
       <meta name='description' content={seoDescription} />
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />
-    <div className='container'>
-      <section className='section is-large' id='companyInfo'>
-        <div className='columns'>
-          <div className='column'>
-            <h1>{heading}</h1>
-            <h2>{subheading}</h2>
-            <p>{info}</p>
-          </div>
-          <div className='column'>
-            <Img fluid={image.childImageSharp.fluid} alt='Eivind Hope AS' />
-          </div>
-        </div>
-      </section>
-    </div>
-    <Tjenester />
+    <section className='section is-large is-center'></section>
   </div>
 );
 
@@ -101,13 +87,6 @@ export const pageQuery = graphql`
         heading
         subheading
         info
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
       }
     }
   }

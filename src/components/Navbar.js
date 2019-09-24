@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "../img/Logo.png";
+import Logo from "../img/Logo1.png";
 import "./all.scss";
 
 const Navbar = class extends React.Component {
@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
               <img
                 src={Logo}
                 alt='Eivind Hope AS'
-                style={{ maxHeight: "50px", width: "auto" }}
+                style={{ maxHeight: "80px", width: "auto" }}
               />
             </Link>
             {/* Hamburger menu */}
@@ -65,28 +65,7 @@ const Navbar = class extends React.Component {
           >
             <div className='navbar-end has-text-centered'>
               <Link className='navbar-item nav-links' to='/'>
-                Heim
-              </Link>
-              <Link
-                className='navbar-item nav-links'
-                to='/automatisk-industrimaskin'
-              >
-                Automatisk industrimaskin
-              </Link>
-              <Link className='navbar-item nav-links' to='/liftutleie'>
-                Liftutleie
-              </Link>
-              <Link className='navbar-item nav-links' to='/rustfritt-rekkverk'>
-                Rustfritt rekkverk
-              </Link>
-              <Link className='navbar-item nav-links' to='/aluminiumsrenner'>
-                Aluminiumsrenner
-              </Link>
-              <Link className='navbar-item nav-links' to='/om-oss'>
-                Om oss
-              </Link>
-              <Link className='navbar-item nav-links' to='/kontakt'>
-                Kontakt
+                Hjem
               </Link>
             </div>
           </div>
