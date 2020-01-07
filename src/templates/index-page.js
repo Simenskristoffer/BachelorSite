@@ -23,7 +23,7 @@ export const IndexPageTemplate = ({
   <>
     <Helmet>
       <meta charSet='utf-8' />
-      <title>{`Simen Stubsjoen Webdesign - ${title}`}</title>
+      <title>{`Bachelorside - ${title}`}</title>
       <meta name='description' content={seoDescription} />
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />

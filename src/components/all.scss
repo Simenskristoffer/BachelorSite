@@ -27,7 +27,7 @@ $dark: #1f211e;
     border: 1px solid;
   }
   .navbar-item {
-    color: $white !important;
+    color: #ffffff !important;
     font-size: 16px;
     font-family: $openSans;
   }
@@ -131,6 +131,8 @@ $dark: #1f211e;
 // ---------- OFFERS COMPONENT ---------//
 #offers {
   background-color: $white;
+  position: relative;
+  height: 100vh;
   h2 {
     font-family: $roboto;
     color: $dark;
@@ -150,27 +152,24 @@ $dark: #1f211e;
     margin-top: 1.5rem;
     color: $white;
   }
+  .arrowDown {
+    position: absolute;
+    color: $gold;
+    bottom: 5%;
+    font-size: 28px;
+    left: 50%;
+  }
 }
 // ---------- FORMER CLIENTS COMPONENT ---------//
 .formerClients {
   background-color: $dark;
+  height: 100vh;
   h2 {
     color: $white !important;
     font-family: $roboto;
     font-size: 2.5rem;
     font-weight: 600 !important;
     padding-bottom: 1.8rem;
-  }
-  .wrapper {
-    display: grid;
-    grid-auto-rows: minmax(70px, auto);
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    margin: 0 25px;
-  }
-  .image {
-    display: block;
-    position: relative;
   }
 }
 

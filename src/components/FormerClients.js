@@ -6,70 +6,19 @@ import logo3 from "../img/kunderlogo/smartcity.png";
 
 export default function FormerClients() {
   return (
-    <section className='section is-medium formerClients'>
+    <section className='section is-large formerClients' id='aboutUs'>
       <div className='container has-text-left'>
-        <h2>Prosjekter jeg har jobbet på</h2>
-        <div className='wrapper'>
-          <div
-            className='panel has-text-left'
-            style={{
-              marginTop: "auto",
-              marginBottom: "auto"
-            }}
-          >
-            <a href='/'>
-              <figure className='image'>
-                <img
-                  src={logo}
-                  alt='lol'
-                  style={{
-                    maxWidth: "135px",
-                    minHeight: "40px"
-                  }}
-                />
-              </figure>
-            </a>
-          </div>
-          <div
-            className='panel has-text-left'
-            style={{
-              marginTop: "auto",
-              marginBottom: "auto"
-            }}
-          >
-            <a href='/'>
-              <figure class='image'>
-                <img
-                  src={logo2}
-                  alt='lol'
-                  style={{
-                    maxWidth: "135px",
-                    minHeight: "40px"
-                  }}
-                />
-              </figure>
-            </a>
-          </div>
-          <div
-            className='panel has-text-left'
-            style={{
-              marginTop: "auto",
-              marginBottom: "auto"
-            }}
-          >
-            <a href='/'>
-              <figure class='image'>
-                <img
-                  src={logo3}
-                  alt='lol'
-                  style={{
-                    maxWidth: "135px",
-                    minHeight: "40px"
-                  }}
-                />
-              </figure>
-            </a>
-          </div>
+        <h2>Deltakere og kontaktinfo</h2>
+        <div className='column is-4'>
+          <img
+            src='https://bulma.io/images/placeholders/1280x960.png'
+            alt='Placeholder image'
+          />
+          <h3 className='subtitle has-text-centered'>Simen Stubsjøen</h3>
+          <p className='employeeInfo'>Bachelor i informasjonssystemer</p>
+          <a href={"tel:" + "97662058"}>
+            <p className='phoneNumber'>TLF: 97662058</p>
+          </a>
         </div>
       </div>
     </section>

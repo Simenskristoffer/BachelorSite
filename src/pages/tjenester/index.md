@@ -2,7 +2,7 @@
 templateKey: services-page
 title: Flotte og smarte webløsninger for bedrifter og privatpersoner
 subtitle: Webdesign, søkeroptimalisering og drifting
-forsidebilde: /img/hero-bilde.jpg
+forsidebilde: /img/nabolag.jpg
 heading: Eivind Hope AS - din blikkenslager
 subheading: Familiebedrift i Rubbestadneset på Bømlo
 info: >-
