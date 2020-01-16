@@ -132,7 +132,6 @@ $dark: #1f211e;
 #offers {
   background-color: $white;
   position: relative;
-  height: 100vh;
   h2 {
     font-family: $roboto;
     color: $dark;
@@ -171,6 +170,37 @@ $dark: #1f211e;
     font-weight: 600 !important;
     padding-bottom: 1.8rem;
   }
+}
+
+//---------- Countdown --------//
+.countdownTitle {
+  font-size: 40px !important;
+}
+.countdownSubtitle {
+  font-size: 28px !important;
+  font-weight: bold;
+  font-family: $roboto;
+  margin: 20px;
+}
+
+.Countdown {
+  margin: 10px auto;
+  padding-bottom: 20px;
+}
+
+.Countdown-col {
+  display: inline-block;
+}
+
+.Countdown-col-element {
+  display: inline-block;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Countdown-col-element strong {
+  font-size: 30px;
 }
 
 @import "~bulma";

@@ -8,7 +8,6 @@ import Layout from "../components/Layout";
 import "../components/all.scss";
 import Intro from "../components/Intro";
 import Hero from "../components/Hero";
-import FormerClients from "../components/FormerClients";
 
 export const IndexPageTemplate = ({
   title,
@@ -28,7 +27,6 @@ export const IndexPageTemplate = ({
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />
     <Intro />
-    <FormerClients />
   </>
 );
 
