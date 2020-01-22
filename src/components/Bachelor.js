@@ -3,14 +3,14 @@ import { FaArrowDown } from "react-icons/fa";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Countdown from "./Countdown";
 
-export default function Intro() {
+export default function Bachelor() {
   return (
     <>
       <section className='section is-large' id='offers'>
         <div className='container'>
           <div className='columns'>
             <div className='column is-8 is-8-desktop has-text-left'>
-              <h2>Viktige datoer for prosjektet</h2>
+              <h2>Viktige datoer for bacheloren</h2>
               <p className='countdownSubtitle'>Forprosjektrapporten</p>
               <Countdown date={`2020-01-20T23:59:00`} />
               <p className='countdownSubtitle'>
@@ -32,7 +32,7 @@ export default function Intro() {
             </div>
           </div>
         </div>
-        <AnchorLink href='#aboutUs'>
+        <AnchorLink href='#ia'>
           <FaArrowDown className='arrowDown' />
         </AnchorLink>
       </section>

@@ -7,6 +7,7 @@ const Hero = ({ title, img, subtitle, className }) => {
   return (
     <>
       <div
+        id='heroo'
         className='full-width-image-container margin-top-0 site-hero'
         style={{
           backgroundImage: `linear-gradient(180deg, #7a7a7a47 0%, #f2295b42 100%), url(${

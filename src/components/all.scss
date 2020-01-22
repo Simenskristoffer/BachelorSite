@@ -203,4 +203,97 @@ $dark: #1f211e;
   font-size: 30px;
 }
 
+#Ia {
+  background-color: $gray;
+  position: relative;
+  h2 {
+    font-family: $roboto;
+    color: $white;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: $roboto;
+    letter-spacing: 1.2px;
+  }
+  .button {
+    background-color: $gray;
+    font-size: 1.2rem;
+    font-family: $roboto;
+    margin-top: 1.5rem;
+    color: $white;
+  }
+  .arrowDown {
+    position: absolute;
+    color: $gold;
+    bottom: 5%;
+    font-size: 28px;
+    left: 50%;
+  }
+}
+// ---------- IA COMPONENT ---------//
+#ia {
+  background-color: $gray;
+  position: relative;
+  h2 {
+    font-family: $roboto;
+    color: $white;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: $roboto;
+    letter-spacing: 1.2px;
+  }
+  .button {
+    background-color: $gray;
+    font-size: 1.2rem;
+    font-family: $roboto;
+    margin-top: 1.5rem;
+    color: $white;
+  }
+  .arrowDown {
+    position: absolute;
+    color: $gold;
+    bottom: 5%;
+    font-size: 28px;
+    left: 50%;
+  }
+}
+// ---------- SIKKERHET COMPONENT ---------//
+#sikkerhet {
+  background-color: $white;
+  position: relative;
+  h2 {
+    font-family: $roboto;
+    color: $dark;
+    font-size: 2.5rem;
+    font-weight: 600 !important;
+    padding-bottom: 1.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+    font-family: $roboto;
+    letter-spacing: 1.2px;
+  }
+  .button {
+    background-color: $gray;
+    font-size: 1.2rem;
+    font-family: $roboto;
+    margin-top: 1.5rem;
+    color: $white;
+  }
+  .arrowUp {
+    position: absolute;
+    color: $gold;
+    bottom: 5%;
+    font-size: 28px;
+    left: 50%;
+  }
+}
+
 @import "~bulma";

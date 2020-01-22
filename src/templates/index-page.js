@@ -6,8 +6,10 @@ import Img from "gatsby-image";
 
 import Layout from "../components/Layout";
 import "../components/all.scss";
-import Intro from "../components/Intro";
+import Bachelor from "../components/Bachelor";
 import Hero from "../components/Hero";
+import Ia from "../components/Ia";
+import Sikkerhet from "../components/Sikkerhet";
 
 export const IndexPageTemplate = ({
   title,
@@ -26,7 +28,9 @@ export const IndexPageTemplate = ({
       <meta name='description' content={seoDescription} />
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />
-    <Intro />
+    <Bachelor />
+    <Ia />
+    <Sikkerhet />
   </>
 );
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import Logo from "../img/Logo1.png";
 import "./all.scss";
 
@@ -41,9 +42,9 @@ const Navbar = class extends React.Component {
       >
         <div className='container'>
           <div className='navbar-brand'>
-            <Link to='/' className='navbar-item' title='Logo'>
-              <h2>Nabolaget</h2>
-            </Link>
+            <AnchorLink href='#heroo' className='navbar-item' title='Logo'>
+              <h2>HiØ oversikt</h2>
+            </AnchorLink>
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -60,21 +61,18 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className='navbar-end has-text-centered'>
-              <Link className='navbar-item nav-links' to='/'>
+              <AnchorLink className='navbar-item nav-links' href='#heroo'>
                 Hjem
-              </Link>
-              <Link className='navbar-item nav-links' to='/tjenester'>
-                Prosjektet
-              </Link>
-              <Link className='navbar-item nav-links' to='/'>
-                Om oss
-              </Link>
-              <Link className='navbar-item nav-links' to='/'>
-                Dokumentasjon
-              </Link>
-              <Link className='navbar-item nav-links' to='/'>
-                Kildekode
-              </Link>
+              </AnchorLink>
+              <AnchorLink className='navbar-item nav-links' href='#offers'>
+                Bachelor
+              </AnchorLink>
+              <AnchorLink className='navbar-item nav-links' href='#ia'>
+                Informasjonsarkitektur
+              </AnchorLink>
+              <AnchorLink className='navbar-item nav-links' href='#sikkerhet'>
+                Innføring i Datasikkerhet
+              </AnchorLink>
             </div>
           </div>
         </div>
