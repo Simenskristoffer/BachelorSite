@@ -17,9 +17,8 @@ const Hero = ({ title, img, subtitle, className }) => {
         }}
       >
         <Navbar />
-        <h2 className='has-text-weight-bold is-size-2'>Nabovarsel</h2>
-        <h3>En app for borettslag og naboer</h3>
-        <button className='button'>Les mer om vårt prosjekt</button>
+        <h2 className='has-text-weight-bold is-size-2'>Oversikt</h2>
+        <h3>En nettside med oversikt over innleveringer - HiØ</h3>
         <AnchorLink href='#offers'>
           <FaArrowDown className='arrowDown' />
         </AnchorLink>
