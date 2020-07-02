@@ -8,8 +8,6 @@ import Layout from "../components/Layout";
 import "../components/all.scss";
 import Bachelor from "../components/Bachelor";
 import Hero from "../components/Hero";
-import Ia from "../components/Ia";
-import Sikkerhet from "../components/Sikkerhet";
 
 export const IndexPageTemplate = ({
   title,
@@ -19,7 +17,7 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   info,
-  image
+  image,
 }) => (
   <>
     <Helmet>
@@ -29,8 +27,6 @@ export const IndexPageTemplate = ({
     </Helmet>
     <Hero title={title} subtitle={subtitle} img={forsidebilde} />
     <Bachelor />
-    <Ia />
-    <Sikkerhet />
   </>
 );
 
@@ -42,7 +38,7 @@ IndexPageTemplate.propTypes = {
   heading: PropTypes.string,
   subheading: PropTypes.string,
   info: PropTypes.object,
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 const IndexPage = ({ data }) => {
@@ -67,9 +63,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object
-    })
-  })
+      frontmatter: PropTypes.object,
+    }),
+  }),
 };
 
 export default IndexPage;

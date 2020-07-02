@@ -13,12 +13,12 @@ const Hero = ({ title, img, subtitle, className }) => {
           backgroundImage: `linear-gradient(180deg, #7a7a7a47 0%, #f2295b42 100%), url(${
             !!img.childImageSharp ? img.childImageSharp.fluid.src : img
           })`,
-          backgroundAttachment: "fixed"
+          backgroundAttachment: "fixed",
         }}
       >
         <Navbar />
-        <h2 className='has-text-weight-bold is-size-2'>Oversikt</h2>
-        <h3>En nettside med oversikt over innleveringer - HiØ</h3>
+        <h2 className='has-text-weight-bold is-size-2'>Bloggen til Simen</h2>
+        <h3>Heteste innleggene</h3>
         <AnchorLink href='#offers'>
           <FaArrowDown className='arrowDown' />
         </AnchorLink>

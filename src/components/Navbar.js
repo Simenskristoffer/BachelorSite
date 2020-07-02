@@ -9,7 +9,7 @@ const Navbar = class extends React.Component {
     super(props);
     this.state = {
       active: false,
-      navBarActiveClass: ""
+      navBarActiveClass: "",
     };
   }
 
@@ -17,17 +17,17 @@ const Navbar = class extends React.Component {
     // toggle the active boolean in the state
     this.setState(
       {
-        active: !this.state.active
+        active: !this.state.active,
       },
       // after state has been updated,
       () => {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active"
+              navBarActiveClass: "is-active",
             })
           : this.setState({
-              navBarActiveClass: ""
+              navBarActiveClass: "",
             });
       }
     );
@@ -43,7 +43,7 @@ const Navbar = class extends React.Component {
         <div className='container'>
           <div className='navbar-brand'>
             <AnchorLink href='#heroo' className='navbar-item' title='Logo'>
-              <h2>HiØ oversikt</h2>
+              <h2>Simens blogg</h2>
             </AnchorLink>
             {/* Hamburger menu */}
             <div
@@ -63,15 +63,6 @@ const Navbar = class extends React.Component {
             <div className='navbar-end has-text-centered'>
               <AnchorLink className='navbar-item nav-links' href='#heroo'>
                 Hjem
-              </AnchorLink>
-              <AnchorLink className='navbar-item nav-links' href='#offers'>
-                Bachelor
-              </AnchorLink>
-              <AnchorLink className='navbar-item nav-links' href='#ia'>
-                Informasjonsarkitektur
-              </AnchorLink>
-              <AnchorLink className='navbar-item nav-links' href='#sikkerhet'>
-                Innføring i Datasikkerhet
               </AnchorLink>
             </div>
           </div>
